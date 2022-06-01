@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_1"
+
+    tools:context=".AddNoteFragment">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:id="@+id/EditText_Title"
+   android:hint="Title"
+    android:inputType="text"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    />
+
+    <EditText
+        android:id="@+id/EditText_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/EditText_Title"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/white"
+        android:gravity="top"
+        android:hint="Note"
+        android:inputType="textMultiLine"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_save_24"
+        android:tint="#FAEDE5E5"
+        app:backgroundTint="#D80606"
+        app:rippleColor="#F9F4FA" />
+
+</RelativeLayout>
